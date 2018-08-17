@@ -86,6 +86,7 @@
 		37B8EDE820FA6EE500C3FDE0 /* LinkIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 37F9EA801F8A0CFB00858317 /* LinkIcon.pdf */; };
 		37F9EA841F8A0CFB00858317 /* LinkIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 37F9EA801F8A0CFB00858317 /* LinkIcon.pdf */; };
 		37F9EA851F8A0CFB00858317 /* URLEmbeddedViewOGData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F9EA811F8A0CFB00858317 /* URLEmbeddedViewOGData.xcdatamodeld */; };
+		AA5CBABE21275C7B006FA5B8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5CBABD21275C7B006FA5B8 /* String.swift */; };
 		ED602B6E1F42D4EB00A45816 /* URLEmbeddedView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED602B6C1F42D4EB00A45816 /* URLEmbeddedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -133,6 +134,7 @@
 		37F9EA801F8A0CFB00858317 /* LinkIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LinkIcon.pdf; sourceTree = "<group>"; };
 		37F9EA821F8A0CFB00858317 /* URLEmbeddedViewOGData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URLEmbeddedViewOGData.xcdatamodel; sourceTree = "<group>"; };
 		37F9EA831F8A0CFB00858317 /* URLEmbeddedViewOGData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URLEmbeddedViewOGData2.xcdatamodel; sourceTree = "<group>"; };
+		AA5CBABD21275C7B006FA5B8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		ED602B691F42D4EB00A45816 /* URLEmbeddedView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLEmbeddedView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED602B6C1F42D4EB00A45816 /* URLEmbeddedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLEmbeddedView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +185,7 @@
 				3751D0591FBCA9840035E242 /* MD5.swift */,
 				3751D05A1FBCA9840035E242 /* NSTimeInterval+Util.swift */,
 				3751D05B1FBCA9840035E242 /* NSUserDefaults+URLEmbeddedView.swift */,
+				AA5CBABD21275C7B006FA5B8 /* String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				3751D07B1FBCA9840035E242 /* OGSession.swift in Sources */,
 				3744376920F90F76008ABA8D /* OpenGraph.Data.swift in Sources */,
 				3744376520F90F4F008ABA8D /* OpenGraph.HTML.swift in Sources */,
+				AA5CBABE21275C7B006FA5B8 /* String.swift in Sources */,
 				3744376320F90F37008ABA8D /* OpenGraph.swift in Sources */,
 				3744376720F90F63008ABA8D /* OpenGraph.Youtube.swift in Sources */,
 				3744376B20F90FAE008ABA8D /* OpenGraphData.swift in Sources */,

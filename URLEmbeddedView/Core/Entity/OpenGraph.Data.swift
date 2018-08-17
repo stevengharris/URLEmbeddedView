@@ -46,7 +46,12 @@ extension OpenGraph.Data {
     }
 
     init(ogData: OGData) {
-        imageUrl = URL(string: ogData.imageUrl)
+        // Added stringByDecodingHTMLEntities to decode &amp; to plain & so that parameters in URLs
+        // separated by & are not decoded. Without this change, Eventbrite and Facebook event URLs
+        // would not work. Example:
+        // https://www.eventbrite.com/e/indivisible-east-bay-august-26-all-member-meeting-tickets-48568977118?aff=erellivmlt
+        // returns an imageUrl with &amp;, which when decoded simply to & works properly
+        imageUrl = URL(string: ogData.imageUrl.stringByDecodingHTMLEntities)
         pageDescription = ogData.pageDescription.isEmpty ? nil : ogData.pageDescription
         pageTitle = ogData.pageTitle.isEmpty ? nil : ogData.pageTitle
         pageType = ogData.pageType.isEmpty ? nil : ogData.pageType
