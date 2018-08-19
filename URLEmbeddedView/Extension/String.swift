@@ -17,6 +17,7 @@ private let characterEntities : [ Substring : Character ] = [
     
     // HTML character entity references:
     "&nbsp;"    : "\u{00a0}",
+    "&#39;"     : "'",
     // ...
     "&diams;"   : "♦",
 ]

@@ -52,7 +52,7 @@ extension OpenGraph.Data {
         // https://www.eventbrite.com/e/indivisible-east-bay-august-26-all-member-meeting-tickets-48568977118?aff=erellivmlt
         // returns an imageUrl with &amp;, which when decoded simply to & works properly
         imageUrl = URL(string: ogData.imageUrl.stringByDecodingHTMLEntities)
-        pageDescription = ogData.pageDescription.isEmpty ? nil : ogData.pageDescription
+        pageDescription = ogData.pageDescription.isEmpty ? nil : ogData.pageDescription.stringByDecodingHTMLEntities
         pageTitle = ogData.pageTitle.isEmpty ? nil : ogData.pageTitle
         pageType = ogData.pageType.isEmpty ? nil : ogData.pageType
         siteName = ogData.siteName.isEmpty ? nil : ogData.siteName
