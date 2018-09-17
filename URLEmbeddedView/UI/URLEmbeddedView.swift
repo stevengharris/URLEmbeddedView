@@ -41,7 +41,7 @@ protocol URLEmbeddedViewProtocol: class {
     private var domainImageViewWidthConstraint: NSLayoutConstraint?
 
     #if os(iOS)
-    private let activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    private let activityView = UIActivityIndicatorView(style: .gray)
     #elseif os(tvOS)
     private let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
     #endif
@@ -49,7 +49,7 @@ protocol URLEmbeddedViewProtocol: class {
 
     private lazy var presenter: URLEmbeddedViewPresenterProtocol = URLEmbeddedViewPresenter(view: self)
 
-    @objc open let textProvider: AttributedTextProvider = .shared
+    @objc public let textProvider: AttributedTextProvider = .shared
     
     @objc open var didTapHandler: ((URLEmbeddedView, URL?) -> Void)?
     @objc open var shouldContinueDownloadingWhenCancel: Bool {

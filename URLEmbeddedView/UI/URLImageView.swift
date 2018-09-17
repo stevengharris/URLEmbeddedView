@@ -16,7 +16,7 @@ protocol URLImageViewProtocol: class {
 final class URLImageView: UIImageView {
 
     #if os(iOS)
-    private let activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    private let activityView = UIActivityIndicatorView(style: .gray)
     #elseif os(tvOS)
     private let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
     #endif

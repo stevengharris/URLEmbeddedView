@@ -46,13 +46,13 @@ final class OGImageCacheManager: NSObject, OGImageCacheManagerProtocol {
         createDirectoriesIfNeeded()
         notificationCenter.addObserver(self,
                                        selector: #selector(type(of: self).didReceiveMemoryWarning(_:)),
-                                       name: .UIApplicationDidReceiveMemoryWarning,
+                                       name: UIApplication.didReceiveMemoryWarningNotification,
                                        object: nil)
     }
     
     deinit {
         notificationCenter.removeObserver(self,
-                                          name: .UIApplicationDidReceiveMemoryWarning,
+                                          name: UIApplication.didReceiveMemoryWarningNotification,
                                           object: nil)
     }
     

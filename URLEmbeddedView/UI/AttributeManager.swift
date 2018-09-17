@@ -64,7 +64,7 @@ public final class AttributeManager {
     }
     
     func attributedText(_ string: String) -> NSAttributedString {
-        let attributes: [NSAttributedStringKey : Any] = [
+        let attributes: [NSAttributedString.Key : Any] = [
             .font : font,
             .foregroundColor : fontColor
         ]

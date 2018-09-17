@@ -23,14 +23,14 @@ extension UIView {
     
     func addConstraints(with view: UIView,
                         size: Size,
-                        relatedBy relation: NSLayoutRelation = .equal,
+                        relatedBy relation: NSLayoutConstraint.Relation = .equal,
                         multiplier: CGFloat = 1) {
         view.translatesAutoresizingMaskIntoConstraints = false
         addConstraints([
                 (.width, size.width),
                 (.height, size.height)
             ]
-            .compactMap { (value: (NSLayoutAttribute, CGFloat?)) in
+            .compactMap { (value: (NSLayoutConstraint.Attribute, CGFloat?)) in
                 value.1.map {
                     .init(item: view,
                           attribute: value.0,
@@ -88,7 +88,7 @@ extension UIView {
                 (.right, edges.right),
                 (.bottom, edges.bottom)
             ]
-            .compactMap { (value: (NSLayoutAttribute, CGFloat?)) in
+            .compactMap { (value: (NSLayoutConstraint.Attribute, CGFloat?)) in
                 value.1.map {
                     .init(item: view,
                           attribute: value.0,
